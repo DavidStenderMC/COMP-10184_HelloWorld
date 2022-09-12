@@ -13,7 +13,9 @@ void setup() {
 
   Serial.println("\n\n");
   Serial.println("David Stender #000828140");
+  Serial.print("ESP Chip ID: ");
   Serial.println(ESP.getChipId());
+  Serial.print("Flash Chip ID: ");
   Serial.println(ESP.getFlashChipId());
   Serial.println("\n");
 }
@@ -21,6 +23,7 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
 
+  Serial.print("Milliseconds since D1 Mini was started = ");
   Serial.println(millis());
   delay(2000);
 }
